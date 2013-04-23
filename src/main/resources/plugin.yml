@@ -1,0 +1,5 @@
+author: vemacs
+description: Safe dimension switching for MCPC+
+main: com.nullblock.vemacs.safedims.SafeDims
+name: SafeDims
+version: '1.0'
