@@ -30,7 +30,7 @@ public class SafeDims extends JavaPlugin implements Listener {
 
 			Location safe = Utils.getSafeY(step);
 			Location adjust = new Location(to.getWorld(), safe.getX(),
-					safe.getY() + 2, safe.getZ());
+					safe.getY() + 1.8, safe.getZ());
 
 			getLogger().info(
 					"New Y for " + event.getPlayer().getName() + " to "
