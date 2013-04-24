@@ -13,9 +13,9 @@ public class Utils {
 		for (double height = location.getY(); height >= 0; height--) {
 			safe.setY(height);
 			if ((!safe.getBlock().getType().isTransparent())
-					&& (!new Location(safe.getWorld(), safe.getX(),
+					&& (new Location(safe.getWorld(), safe.getX(),
 							safe.getY() + 1.8, safe.getZ()).getBlock()
-							.getType().isOccluding())) {
+							.getType().isTransparent())) {
 				location = safe;
 				break;
 			}
