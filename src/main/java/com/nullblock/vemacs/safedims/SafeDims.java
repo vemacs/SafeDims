@@ -17,7 +17,7 @@ public class SafeDims extends JavaPlugin implements Listener {
 		saveDefaultConfig();
 	}
 
-	@EventHandler(priority = EventPriority.MONITOR)
+	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onPlayerTeleport(PlayerTeleportEvent event) {
 		Location to = event.getTo();
 		if (Utils.isDangerous(to.getWorld().getName()).booleanValue()) {
